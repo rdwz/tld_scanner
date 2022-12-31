@@ -134,7 +134,7 @@ if __name__ == '__main__':
             print("Please check your network connectivity (or https://data.iana.org is down)!")
             sys.exit(2)
     if iana == False and tldfile == '':
-        tldfile = "ccTLDs.txt"
+        tldfile = "data/ccTLDs.txt"
         print("Using country code TLDs")
         surpressCTldMsg = True
     try:

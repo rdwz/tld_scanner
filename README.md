@@ -1,5 +1,6 @@
 
 # TLD Scanner
+
 TLD Scanner scans for all existing top level domains for a give domain name.
 
 | Switch | Description |
@@ -17,20 +18,20 @@ TLD Scanner scans for all existing top level domains for a give domain name.
 | -b | Default: Does a namelookup and then tries to connect and prints the ip |
 | -s | Check for https too |
 
-
 ## Get TLD Scanner running
-```
+
+```sh
 git clone https://github.com/ozzi-/tld_scanner.git
 cd tld_scanner
 pip3 install -r requirements.txt
 python3 tld_scanner.py
 ```
 
-
-## Example 
+## Example
 
 This will do a name lookup (fastest method) for google using the top TLD list (24 domains in 0.0649 seconds)
-```
+
+```sh
 $ ./tld_scanner.py -n -d google -i topTLDs.txt 
   _______ _      _____     _____  _____          _   _ _   _ ______ _____  
  |__   __| |    |  __ \   / ____|/ ____|   /\   | \ | | \ | |  ____|  __ \ 
@@ -55,6 +56,7 @@ Using domain: google
 ```
 
 This will check all ~1500 TLDs for the domain name "gnu" using http and https
-```
+
+```sh
 ./tld_scanner.py -d gnu -f -s
 ```
